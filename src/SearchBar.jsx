@@ -7,7 +7,9 @@ function SearchBar({ search, setSearch }) {
       value={search}
       onChange={(e) => setSearch(e.target.value)}
       placeholder="Search..."
+      id ="searchBar"
     />
+    
   );
 }
 

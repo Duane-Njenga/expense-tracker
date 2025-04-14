@@ -2,24 +2,15 @@ import React from "react";
 
 function ExpenseTable({expenses}) {
 
-  // let expenses = [
-  //   {
-  //     id: 1,
-  //     expenseName: "Test",
-  //     description:"Test des",
-  //     category: "Test cat",
-  //     amount: 200,
-  //     date: ""
-  //   }
-  // ]
+
   return (
     <table >
         <tr>
-          <th className="border p-2">Name</th>
-          <th className="border p-2">Description</th>
-          <th className="border p-2">Category</th>
-          <th className="border p-2">Amount</th>
-          <th className="border p-2">Date</th>
+          <th >Name</th>
+          <th >Description</th>
+          <th >Category</th>
+          <th>Amount</th>
+          <th >Date</th>
         </tr>
       <tbody>
 

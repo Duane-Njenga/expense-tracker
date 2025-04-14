@@ -18,7 +18,7 @@ function InputForm({ onAddExpense }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} class ="block">
+    <form onSubmit={handleSubmit} class ="block" id = "inputForm">
       <input type = "text" 
       placeholder="Expense Name" value={expenseName} onChange={(e) => setExpenseName(e.target.value)} required/>
       <input type = "text" placeholder="Description" value={description} onChange={(e) => {setDescription(e.target.value)}} required/>

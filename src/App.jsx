@@ -23,9 +23,12 @@ function App() {
 
   return (
     <>
-      <SearchBar />
+      <h1>Smart Expense Tracker</h1>
+      <SearchBar search={search}setSearch={setSearch}/>
+      <div id ="inputContainer">
       <InputForm onAddExpense={handleAddExpense} />
-      <ExpenseTable expenses={expenses}/>
+      <ExpenseTable expenses={filtered}/>
+      </div>
 
     </>
   )
