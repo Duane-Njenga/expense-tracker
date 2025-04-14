@@ -18,14 +18,14 @@ function InputForm({ onAddExpense }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} class ="block" id = "inputForm">
+    <form onSubmit={handleSubmit}  id = "inputForm">
       <input type = "text" 
       placeholder="Expense Name" value={expenseName} onChange={(e) => setExpenseName(e.target.value)} required/>
       <input type = "text" placeholder="Description" value={description} onChange={(e) => {setDescription(e.target.value)}} required/>
       <input type = "text" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)} required/>
       <input type="number" placeholder="Amount" value={amount} onChange={(e) => setAmount(e.target.value)} required/>
       <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required/>
-      <button type = "submit" onSubmit={handleSubmit}>Add Expense</button>
+      <button type = "submit" >Add Expense</button>
     </form>
   );
 }

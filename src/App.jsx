@@ -17,8 +17,8 @@ function App() {
   
     const filtered = expenses.filter(
       (e) =>
-        e.expenseName.toLowerCase().includes(search.toLowerCase()) ||
-        e.description.toLowerCase().includes(search.toLowerCase())
+        e.expenseName.toLowerCase().startsWith(search.toLowerCase()) ||
+        e.description.toLowerCase().startsWith(search.toLowerCase())
     );
 
   return (
