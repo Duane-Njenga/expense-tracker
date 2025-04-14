@@ -25,7 +25,7 @@ function App() {
     <>
       <SearchBar />
       <InputForm onAddExpense={handleAddExpense} />
-      {/* <ExpenseTable /> */}
+      <ExpenseTable expenses={expenses}/>
 
     </>
   )
